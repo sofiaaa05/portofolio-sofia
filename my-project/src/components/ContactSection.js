@@ -1,43 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Import images dari folder assets
 import igIcon from "../assets/images/ig.png";
 import githubIcon from "../assets/images/github.png";
-import dribbleIcon from "../assets/images/dribble.png";
 import linkedinIcon from "../assets/images/linkedin.png";
 import phoneIcon from "../assets/images/phone.png";
 import pesanIcon from "../assets/images/pesan.png";
 
 function ContactSection() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [errors, setErrors] = useState({});
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const validate = () => {
-    const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "Name is required.";
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required.";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Invalid email format.";
-    }
-    if (!formData.message.trim()) newErrors.message = "Message is required.";
-    return newErrors;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = validate();
-    setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
-      alert("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    }
-  };
-
   return React.createElement(
     "section",
     { 
@@ -48,76 +18,112 @@ function ContactSection() {
     [
       React.createElement(
         "h2",
-        { key: "title", className: "text-3xl md:text-4xl font-bold text-[#1F1F1F] mb-4 text-center", style: { fontFamily: 'Poppins, sans-serif' } },
+        { key: "title", className: "text-4xl md:text-5xl font-bold text-[#1F1F1F] mb-6 text-center", style: { fontFamily: 'Poppins, sans-serif' } },
         "Contact Me"
       ),
       
       React.createElement(
         "p",
-        { key: "desc", className: "text-gray-600 mb-12 max-w-2xl mx-auto text-center", style: { fontFamily: 'Poppins, sans-serif' } },
-        "Interested working together? Let's talk about your project and make something amazing!"
+        { key: "desc", className: "text-gray-600 mb-16 max-w-2xl mx-auto text-center text-lg", style: { fontFamily: 'Poppins, sans-serif' } },
+        "Jika tertarik untuk berdiskusi atau berkolaborasi, jangan ragu untuk menghubungi saya melalui email maupun media sosial."
       ),
-
       React.createElement(
         "div",
         {
-          className: "max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12",
+          className: "max-w-4xl mx-auto flex flex-col items-center justify-center gap-12",
           key: "container",
         },
         [
+          // Contact Info Section
           React.createElement(
             "div",
-            { className: "w-full md:w-1/2 flex flex-col gap-6 items-center md:items-start", key: "info" },
+            { className: "w-full flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20", key: "contact-info" },
             [
-              // Email dengan icon pesan.png
+              // Email
               React.createElement(
                 "div",
-                { className: "flex items-center gap-4 text-gray-700", key: "email" },
+                { className: "flex flex-col items-center gap-3 text-center", key: "email" },
                 [
                   React.createElement("img", { 
                     src: pesanIcon, 
                     alt: "Email", 
-                    className: "w-6 h-6",
+                    className: "w-8 h-8",
                     key: "icon1" 
                   }),
-                  React.createElement("span", { key: "text1", className: "text-base", style: { fontFamily: 'Poppins, sans-serif' } }, "sofianugraheni05@email.com")
+                  React.createElement("span", { key: "label1", className: "text-sm text-gray-600", style: { fontFamily: 'Poppins, sans-serif' } }, "Email"),
+                  React.createElement(
+                    "a",
+                    { 
+                      key: "email-link",
+                      href: "mailto:sofianugraheni05@gmail.com",
+                      className: "text-[#7755FF] font-semibold hover:opacity-80 transition",
+                      style: { fontFamily: 'Poppins, sans-serif' }
+                    },
+                    "sofianugraheni05@gmail.com"
+                  )
                 ]
               ),
               
-              // Phone dengan icon phone.png
+              // Phone
               React.createElement(
                 "div",
-                { className: "flex items-center gap-4 text-gray-700", key: "phone" },
+                { className: "flex flex-col items-center gap-3 text-center", key: "phone" },
                 [
                   React.createElement("img", { 
                     src: phoneIcon, 
                     alt: "Phone", 
-                    className: "w-6 h-6",
+                    className: "w-8 h-8",
                     key: "icon2" 
                   }),
-                  React.createElement("span", { key: "text2", className: "text-base", style: { fontFamily: 'Poppins, sans-serif' } }, "+62 857-0895-9489")
+                  React.createElement("span", { key: "label2", className: "text-sm text-gray-600", style: { fontFamily: 'Poppins, sans-serif' } }, "WhatsApp"),
+                  React.createElement(
+                    "a",
+                    { 
+                      key: "phone-link",
+                      href: "https://wa.me/6285708959489?text=Halo%20Sofia%20Nugraheni",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-[#7755FF] font-semibold hover:opacity-80 transition",
+                      style: { fontFamily: 'Poppins, sans-serif' }
+                    },
+                    "+62 857-0895-9489"
+                  )
                 ]
-              ),
+              )
+            ]
+          ),
+
+          // Divider
+          React.createElement(
+            "div",
+            { className: "w-full max-w-lg h-px bg-gray-300", key: "divider" }
+          ),
+
+          // Social Media Section
+          React.createElement(
+            "div",
+            { className: "flex flex-col items-center gap-6", key: "social-section" },
+            [
+              React.createElement("span", { key: "social-label", className: "text-sm text-gray-600 font-semibold", style: { fontFamily: 'Poppins, sans-serif' } }, "FOLLOW ME"),
               
-              // Social Media Icons - Logo Only
               React.createElement(
                 "div",
-                { className: "flex items-center gap-4 mt-2", key: "social" },
+                { className: "flex items-center gap-6", key: "social-icons" },
                 [
                   // Instagram
                   React.createElement(
                     "a",
                     { 
-                      href: "https://instagram.com", 
+                      href: "https://www.instagram.com/sofiaagrani/", 
                       target: "_blank", 
                       rel: "noopener noreferrer",
-                      className: "hover:opacity-80 transition-opacity",
+                      className: "hover:opacity-60 transition-opacity",
                       key: "ig-link"
                     },
                     React.createElement("img", { 
                       src: igIcon, 
                       alt: "Instagram", 
-                      className: "w-6 h-6"
+                      className: "w-8 h-8"
                     })
                   ),
                   
@@ -125,33 +131,16 @@ function ContactSection() {
                   React.createElement(
                     "a",
                     { 
-                      href: "https://github.com", 
+                      href: "https://github.com/sofiaaa05", 
                       target: "_blank", 
                       rel: "noopener noreferrer",
-                      className: "hover:opacity-80 transition-opacity",
+                      className: "hover:opacity-60 transition-opacity",
                       key: "github-link"
                     },
                     React.createElement("img", { 
                       src: githubIcon, 
                       alt: "GitHub", 
-                      className: "w-6 h-6"
-                    })
-                  ),
-                  
-                  // Dribbble
-                  React.createElement(
-                    "a",
-                    { 
-                      href: "https://dribbble.com", 
-                      target: "_blank", 
-                      rel: "noopener noreferrer",
-                      className: "hover:opacity-80 transition-opacity",
-                      key: "dribbble-link"
-                    },
-                    React.createElement("img", { 
-                      src: dribbleIcon, 
-                      alt: "Dribbble", 
-                      className: "w-6 h-6"
+                      className: "w-8 h-8"
                     })
                   ),
                   
@@ -159,121 +148,21 @@ function ContactSection() {
                   React.createElement(
                     "a",
                     { 
-                      href: "https://linkedin.com", 
+                      href: "https://www.linkedin.com/in/sofia-nugraheni/", 
                       target: "_blank", 
                       rel: "noopener noreferrer",
-                      className: "hover:opacity-80 transition-opacity",
+                      className: "hover:opacity-60 transition-opacity",
                       key: "linkedin-link"
                     },
                     React.createElement("img", { 
                       src: linkedinIcon, 
                       alt: "LinkedIn", 
-                      className: "w-6 h-6"
+                      className: "w-8 h-8"
                     })
                   )
                 ]
               )
             ]
-          ),
-
-          React.createElement(
-            "div",
-            { className: "w-full md:w-1/2 flex justify-center md:justify-end", key: "form-wrapper" },
-            React.createElement(
-              "div",
-              { className: "bg-white rounded-2xl p-8 shadow-lg w-full max-w-md" },
-              [
-                // Name Field
-                React.createElement("div", { className: "mb-4", key: "name-group" }, [
-                  React.createElement("label", { 
-                    key: "label-name", 
-                    htmlFor: "name", 
-                    className: "block text-sm font-semibold mb-2 text-gray-800 text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' }
-                  }, "Name"),
-                  React.createElement("input", {
-                    id: "name",
-                    key: "name-input",
-                    type: "text",
-                    name: "name",
-                    placeholder: "Your Name",
-                    value: formData.name,
-                    onChange: handleChange,
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7755FF] focus:border-transparent"
-                  }),
-                  errors.name && React.createElement("span", { 
-                    className: "text-sm text-red-500 mt-1 block text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    key: "err-name" 
-                  }, errors.name)
-                ]),
-
-                // Email Field
-                React.createElement("div", { className: "mb-4", key: "email-group" }, [
-                  React.createElement("label", { 
-                    key: "label-email", 
-                    htmlFor: "email", 
-                    className: "block text-sm font-semibold mb-2 text-gray-800 text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' }
-                  }, "Email"),
-                  React.createElement("input", {
-                    id: "email",
-                    key: "email-input",
-                    type: "email",
-                    name: "email",
-                    placeholder: "you@email.com",
-                    value: formData.email,
-                    onChange: handleChange,
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7755FF] focus:border-transparent"
-                  }),
-                  errors.email && React.createElement("span", { 
-                    className: "text-sm text-red-500 mt-1 block text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    key: "err-email" 
-                  }, errors.email)
-                ]),
-
-                // Message Field
-                React.createElement("div", { className: "mb-6", key: "message-group" }, [
-                  React.createElement("label", { 
-                    key: "label-message", 
-                    htmlFor: "message", 
-                    className: "block text-sm font-semibold mb-2 text-gray-800 text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' }
-                  }, "Message"),
-                  React.createElement("textarea", {
-                    id: "message",
-                    key: "message-input",
-                    name: "message",
-                    placeholder: "Type your message...",
-                    value: formData.message,
-                    onChange: handleChange,
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    className: "w-full border border-gray-300 rounded-lg px-4 py-3 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#7755FF] focus:border-transparent"
-                  }),
-                  errors.message && React.createElement("span", { 
-                    className: "text-sm text-red-500 mt-1 block text-left",
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    key: "err-message" 
-                  }, errors.message)
-                ]),
-
-                // Submit Button
-                React.createElement(
-                  "button",
-                  { 
-                    type: "button",
-                    onClick: handleSubmit,
-                    key: "btn",
-                    style: { fontFamily: 'Poppins, sans-serif' },
-                    className: "w-full bg-gradient-to-r from-[#7755FF] to-[#FF6480] text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity" 
-                  },
-                  "Send Message"
-                )
-              ]
-            )
           )
         ]
       )

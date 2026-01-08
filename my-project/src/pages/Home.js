@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
-import PortfolioSection from '../components/PortfolioSection';
+import PortfolioSection from '../components/PortfolioSection';i
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 

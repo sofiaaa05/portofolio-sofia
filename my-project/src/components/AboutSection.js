@@ -1,5 +1,5 @@
 import React from "react";
-import myProfile from "../assets/images/my_profile.jpeg";
+import myProfile from "../assets/images/aku.webp";
 import frameIcon from "../assets/images/Frame.svg";
 
 function AboutSection() {
@@ -31,7 +31,7 @@ function AboutSection() {
         React.createElement(
           "p",
           { className: "text-[#6B7280] text-base sm:text-lg md:text-lg leading-7 mb-6" },
-          "Hi! I'm Sofia Nugraheni, an Information Systems student at Universitas Negeri Surabaya with a passion for UI/UX design. Through the Web Development and UI/UX bootcamp at Celerates, I’ve learned how to combine aesthetic design with an intuitive user experience."
+          "Saya Sofia Nugraheni, mahasiswa Sistem Informasi Universitas Negeri Surabaya. Penerima Beasiswa Pendidikan Indonesia (BPI) – Asrama Mahasiswa Nusantara (AMN) dari LPDP. Berfokus pada UI/UX Design dan perancangan pengalaman pengguna berbasis analisis kebutuhan serta proses bisnis, dengan pemahaman dasar pengembangan web. Berpengalaman dalam proyek kolaboratif, aktif berorganisasi dan mengikuti kompetisi."
         ),
         React.createElement(
           "div",
@@ -44,17 +44,12 @@ function AboutSection() {
           React.createElement(
             "span",
             { className: "bg-[#E0EAFE] text-[#7755FF] text-sm sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm", style: { color: '#7755FF' } },
+            "System Analyst"
+          ),
+          React.createElement(
+            "span",
+            { className: "bg-[#E0EAFE] text-[#7755FF] text-sm sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm", style: { color: '#7755FF' } },
             "Web Development"
-          ),
-          React.createElement(
-            "span",
-            { className: "bg-[#E0EAFE] text-[#7755FF] text-sm sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm", style: { color: '#7755FF' } },
-            "Branding"
-          ),
-          React.createElement(
-            "span",
-            { className: "bg-[#E0EAFE] text-[#7755FF] text-sm sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm", style: { color: '#7755FF' } },
-            "Front End Developer"
           )
         ),
         React.createElement(

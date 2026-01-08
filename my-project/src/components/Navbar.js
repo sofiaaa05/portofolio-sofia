@@ -43,8 +43,14 @@ const Navbar = () => {
               'button',
               {
                 key: 'hire',
+                onClick: () => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                },
                 className:
-                  'bg-gradient-to-r from-[#7755FF] to-[#FF6480] text-white text-sm font-medium px-4 md:px-6 py-2 md:py-2.5 rounded-lg shadow-md hover:opacity-90 transition flex items-center gap-2',
+                  'bg-gradient-to-r from-[#7755FF] to-[#FF6480] text-white text-sm font-medium px-4 md:px-6 py-2 md:py-2.5 rounded-lg shadow-md hover:opacity-90 transition flex items-center gap-2 cursor-pointer border-none',
                 style: { height: 'auto' },
               },
               React.createElement('img', { src: frameIcon, alt: 'plane', className: 'w-4 h-4', key: 'icon' }),

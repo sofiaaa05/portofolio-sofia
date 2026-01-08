@@ -4,6 +4,7 @@ import ProfileCard from "./components/ProfileCard";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection"; 
 import PortfolioSection from "./components/PortfolioSection";
+
 import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/Footer"; 
 
