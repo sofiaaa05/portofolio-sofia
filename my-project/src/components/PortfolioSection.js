@@ -2,7 +2,7 @@ import React from "react";
 import travelImg from "../assets/images/travel.webp";
 import lumpurImg from "../assets/images/lumpur.webp";
 import feminoorieImg from "../assets/images/feminoorie.webp";
-import rejosenseImg from "../assets/images/rejosense.webp"
+import adminImg from "../assets/images/admin.png"
 import smartwatchImg from "../assets/images/smartwatch.webp"
 import bimbelImg from "../assets/images/bimbel.webp";
 import gameImg from "../assets/images/game.webp";
@@ -61,11 +61,11 @@ function PortfolioSection() {
       bg: "bg-yellow-100",
     },
     {
-      image: rejosenseImg,
-      title: "UI/UX Design Website Rejosense",
-      desc: "Rejosense adalah prototype website dan dashboard pencatatan hasil panen sebagai branding unit usaha greenhouse melon di Gresik dalam program Innovillage 2025",
+      image: adminImg,
+      title: "UI/UX Design Dashboard Admin Saleema Tour",
+      desc: " Dashboard Admin Saleema Tour adalah prototype dashboard admin dari website Saleema Tour untuk mengelola data layanan tour & travelling",
       tag: "Website",
-      link: "https://www.figma.com/proto/rpek0rst8CDHSTABxDwx5S/UIUX-Excecution-3?node-id=103-5&p=f&t=efsliwQ3nIoZz9sr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=103%3A5",
+      link: "https://www.figma.com/proto/5NhBU7lyeFK9m6ajpfZg2c/Kelompok-1_Capstone-Celerates?node-id=3264-12040&p=f&t=1nQ13Q43fT9r9pjy-1&scaling=scale-down&content-scaling=fixed&page-id=41%3A2&starting-point-node-id=3264%3A12040&show-proto-sidebar=1",
     },
     {
       image: smartwatchImg,
