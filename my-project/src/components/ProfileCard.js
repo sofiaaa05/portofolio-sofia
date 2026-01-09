@@ -36,7 +36,7 @@ const ProfileCard = () => {
             { className: "text-[#1E1E2F] font-black text-5xl lg:text-6xl leading-[1.05] mb-6", key: "title" },
             [
               React.createElement('span', { key: 'line1', className: 'block' }, "UI/UX Designer &"),
-              React.createElement('span', { key: 'line2', className: 'block mt-2' }, "System Analysis Enthusiast")
+              React.createElement('span', { key: 'line2', className: 'block mt-2' }, "System Analyst Enthusiast")
             ]
           ),
           React.createElement(
