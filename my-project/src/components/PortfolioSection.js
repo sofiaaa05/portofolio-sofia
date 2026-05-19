@@ -11,7 +11,6 @@ import bpmnImg from "../assets/images/bpmn.webp";
 import poldaImg from "../assets/images/polda.webp";
 import stupenImg from "../assets/images/stupen.webp";
 import pmImg from "../assets/images/pm.webp";
-import logoPorto from "../assets/images/logoporto.png";
 
 function PortfolioSection() {
   const portfolios = [

@@ -1,5 +1,5 @@
 import React from "react";
-import myProfile from "../assets/images/aku.webp";
+import myProfile from "../assets/images/sofia.jpg";
 import frameIcon from "../assets/images/Frame.svg";
 
 function AboutSection() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/images/aku.webp';
+import profileImage from '../assets/images/sofia.jpg';
 
 // Import social media icons dari folder assets
 import igIcon from "../assets/images/ig.png";
