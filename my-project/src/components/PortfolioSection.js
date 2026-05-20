@@ -17,7 +17,7 @@ function PortfolioSection() {
      {
       image: poldaImg,
       title: "IT Division Intern at Kepolisian Daerah Jawa Timur",
-      desc: "Contributed directly to the preparation of SOP documents for IT equipment damage handling and the creation of appropriate workflow process flowcharts within the ICT Division of Kepolisian Daerah Contributed directly to the preparation of SOP documents for IT equipment damage handling and workflow process flowcharts within the IT Division of Kepolisian Daerah Jawa Timur",
+      desc: "Contributed directly to the preparation of SOP documents for IT equipment damage handling and workflow process flowcharts within the IT Division of Kepolisian Daerah Jawa Timur",
       tag: "Internship",
       bg: "bg-purple-100",
     },
@@ -31,7 +31,7 @@ function PortfolioSection() {
     {
      image: healthappImg,
       title: "UI/UX Design Mobile App Habitle",
-      desc: "Habitle is a mobile habit tracker and to-do list application prototype developed as one of the internship projects at PT Otak Kanan.",
+      desc: "Habitle is a mobile habit tracker and to-do list application prototype developed as one of the internship projects at PT Otak Kanan",
       tag: "Mobile App",
       link: "https://www.figma.com/proto/Tl7q59omSvMh0QKHU7jq4J/Pre-Project-UI-UX_Sofia-Nugraheni?node-id=469-7574&t=Al99Phb3FfeMJ6KU-1&scaling=min-zoom&content-scaling=fixed&page-id=75%3A3&starting-point-node-id=469%3A7574&show-proto-sidebar=1",
       bg: "bg-pink-100",
@@ -161,7 +161,7 @@ function PortfolioSection() {
        // Bagian teks
 React.createElement(
   "div",
-  { className: "p-5 text-left" },
+  { className: "p-5 text-right" },
   React.createElement(
     "h3",
     { className: "text-lg font-bold text-[#1F1F1F] mb-1" },

@@ -22,7 +22,7 @@ function AboutSection() {
 
       React.createElement(
         "div",
-        { className: "w-full md:w-1/2 max-w-md md:max-w-xl border border-[#E5E7EB] rounded-xl p-6 sm:p-8 bg-white shadow-sm text-center md:text-left" },
+        { className: "w-full md:w-1/2 max-w-md md:max-w-xl border border-[#E5E7EB] rounded-xl p-6 sm:p-8 bg-white shadow-sm text-center md:text-right" },
         React.createElement(
           "h2",
           { className: "text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#1F1F1F] mb-4" },
