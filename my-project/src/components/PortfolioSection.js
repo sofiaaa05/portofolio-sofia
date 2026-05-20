@@ -10,35 +10,36 @@ import islamiImg from "../assets/images/islami.webp";
 import bpmnImg from "../assets/images/bpmn.webp";
 import poldaImg from "../assets/images/polda.webp";
 import stupenImg from "../assets/images/stupen.webp";
-import pmImg from "../assets/images/pm.webp";
+import healthappImg from "../assets/images/healthapp.webp";
 
 function PortfolioSection() {
   const portfolios = [
      {
       image: poldaImg,
-      title: "Magang di di Bidang TIK Kepolisian Daerah Jawa Timur",
-      desc: "Berkontribusi langsung dalam penyusunan dokumen SOP penanganan kerusakan perangkat IT dan pembuatan flowchart proses kerja yang tepat di lingkungan Bidang TIK Kepolisian Daerah Jawa Timur",
+      title: "IT Division Intern at Kepolisian Daerah Jawa Timur",
+      desc: "Contributed directly to the preparation of SOP documents for IT equipment damage handling and the creation of appropriate workflow process flowcharts within the ICT Division of Kepolisian Daerah Contributed directly to the preparation of SOP documents for IT equipment damage handling and workflow process flowcharts within the IT Division of Kepolisian Daerah Jawa Timur",
       tag: "Internship",
       bg: "bg-purple-100",
     },
 {
       image: stupenImg,
-      title: "Studi Independen Camp Batch 3 di PT Mitra Talenta Grup (Celerates) ",
-      desc: "Mempelajari pengembangan web (HTML/CSS/JS, React JS, Tailwind CSS, Bootstrap, Postgree SQL, Express JS), Deployment & DevOps Basic, serta UI/UX Design (riset pengguna, user persona, user flow, wireframe→prototipe)",
-      tag: "Studi Independen",
+      title: "Independen Study Camp Batch 3 at PT Mitra Talenta Grup (Celerates) ",
+      desc: "Learned web development technologies including HTML, CSS, JavaScript, React JS, Tailwind CSS, Bootstrap, PostgreSQL, and Express JS, as well as basic Deployment & DevOps and UI/UX Design concepts such as user research, user persona, user flow, and wireframing to prototyping",
+      tag: "Independen Study Camp",
       bg: "bg-purple-100",
     },
     {
-      image: pmImg,
-      title: "Soft Skill Project Management - Studi Independen ",
-      desc: "Soft Skill Class di Studi Independen Camp Batch 3 PT Mitra Talenta Grup (Celerates) yang mempelajari agile workflow, kerja tim, dan manajemen waktu proyek",
-      tag: "Studi Independen",
-      bg: "bg-purple-100",
+     image: healthappImg,
+      title: "UI/UX Design Mobile App Habitle",
+      desc: "Habitle is a mobile habit tracker and to-do list application prototype developed as one of the internship projects at PT Otak Kanan.",
+      tag: "Mobile App",
+      link: "https://www.figma.com/proto/Tl7q59omSvMh0QKHU7jq4J/Pre-Project-UI-UX_Sofia-Nugraheni?node-id=469-7574&t=Al99Phb3FfeMJ6KU-1&scaling=min-zoom&content-scaling=fixed&page-id=75%3A3&starting-point-node-id=469%3A7574&show-proto-sidebar=1",
+      bg: "bg-pink-100",
     },
     {
       image: lumpurImg,
       title: "UI/UX Design Mobile App Culture Go!",
-      desc: "Culture Go! adalah prototype mobile app berbasis AR untuk mengenalkan cagar budaya di kawasan wisata budaya Surabaya",
+      desc: "ulture Go! is an AR-based mobile app prototype designed to introduce cultural heritage sites in Surabaya’s cultural tourism areas",
       tag: "Mobile App",
       link: "https://www.figma.com/proto/rpek0rst8CDHSTABxDwx5S/UIUX-Excecution-3?node-id=173-124&t=zcGL5QuA9U8BPv6w-1&scaling=scale-down&content-scaling=fixed&page-id=173%3A123&starting-point-node-id=173%3A124",
       bg: "bg-pink-100",
@@ -46,7 +47,7 @@ function PortfolioSection() {
     {
       image: islamiImg,
       title: "UI/UX Design Mobile App Q-Learn Go!",
-      desc: "Q-Learn Go! adalah prototype mobile app edukasi Al-Qur'an berbasis game",
+      desc: "Q-Learn Go! is a game-based mobile app prototype for Quran education",
       tag: "Mobile App",
       link: "https://www.figma.com/proto/cCyRLCUsLhTwiJGtkf7JeR/Q-Learn-Go-_DAQ2025?node-id=144-1236&p=f&t=r4AuJN8xI4qpk7Wm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
       bg: "bg-purple-100",
@@ -54,7 +55,7 @@ function PortfolioSection() {
     {
       image: feminoorieImg,
       title: "UI/UX Design Website Feminoorie",
-      desc: "Feminoorie adalah prototype website sebagai pendukung selfcare untuk remaja perempuan",
+      desc: "Feminoorie is a website prototype designed to support self-care for teenage girls",
       tag: "Website",
       link: "https://www.figma.com/proto/mE9UbunfZKQxy1AElX63e8/Sofia-Nugraheni_Mini-Project_Feminoorie?node-id=243-506&t=CRb0swiK0SkaHt67-1&scaling=scale-down&content-scaling=fixed&page-id=2%3A8&starting-point-node-id=243%3A506",
       bg: "bg-yellow-100",
@@ -62,21 +63,21 @@ function PortfolioSection() {
     {
       image: adminImg,
       title: "UI/UX Design Dashboard Admin Saleema Tour",
-      desc: " Dashboard Admin Saleema Tour adalah prototype dashboard admin dari website Saleema Tour untuk mengelola data layanan tour & travelling",
+      desc: "Saleema Tour Admin Dashboard is an admin dashboard prototype designed to manage tour and travel service data for the Saleema Tour website",
       tag: "Website",
       link: "https://www.figma.com/proto/5NhBU7lyeFK9m6ajpfZg2c/Kelompok-1_Capstone-Celerates?node-id=3264-12040&p=f&t=1nQ13Q43fT9r9pjy-1&scaling=scale-down&content-scaling=fixed&page-id=41%3A2&starting-point-node-id=3264%3A12040&show-proto-sidebar=1",
     },
     {
       image: smartwatchImg,
       title: "UI/UX Design Smartwatch MomsWatch",
-      desc: "MomsWatch adalah prototype smartwatch yang terintegrasi dengan aplikasi sebagai pencegahan stunting pada ibu hamil",
+      desc: "MomsWatch is a smartwatch prototype integrated with an application for preventing malnutrition in pregnant women",
       tag: "Smartwatch",
       link: "https://www.figma.com/proto/UHjvAwTJLIMtfmmch1DW15/BMC-NIC-MPM?node-id=472-1855&p=f&t=W9ahBftRCBjA2xpo-1&scaling=scale-down&content-scaling=fixed&page-id=411%3A1830&starting-point-node-id=470%3A1834",
     },
    {
       image: travelImg,
       title: "Website Saleema Tour",
-      desc: "Saleema Tour adalah website layanan tour & travelling ramah muslimah - React JS, Tailwind CSS, Express JS, PostgreSQL",
+      desc: "Saleema Tour is a Muslim-friendly tour and travel website - React JS, Tailwind CSS, Express JS, PostgreSQL",
       tag: "Website",
       link: "https://saleema-tour.vercel.app/",
       bg: "bg-purple-100",
@@ -84,7 +85,7 @@ function PortfolioSection() {
     {
       image: bimbelImg,
       title: "Website Sasana Cendekia",
-      desc: "Sasana Cendekia adalah website sebagai bentuk digitalisasi bimbingan belajar di daerah Jombang Jawa Timur menggunakan Wix.com",
+      desc: "Sasana Cendekia is a website designed to digitize tutoring services in the Jombang region of East Java using Wix.com",
       tag: "Website",
       link: "https://desy23302.wixsite.com/portofoliosofia",
       bg: "bg-pink-100",
@@ -92,7 +93,7 @@ function PortfolioSection() {
     {
       image: gameImg,
       title: "Website Mindbender Crosswords Game",
-      desc: "Crosstatic Nusantara adalah game teka-teki silang berbasis website - HTML, CSS, JavaScript, PHP, dan MySQL",
+      desc: "Crosstatic Nusantara is a web-based crossword puzzle game developed using HTML, CSS, JavaScript, PHP, and MySQL",
       tag: "Website",
       link: "https://tadika-mesra-web-design.vercel.app/",
       bg: "bg-purple-100",
@@ -100,7 +101,7 @@ function PortfolioSection() {
      {
       image: bpmnImg,
       title: "BPMN Targetting Proses Bisnis Tarik Tunai Bank BSI",
-      desc: "Analisis Proses Bisnis PT Bank Syariah Indonesia Tbk (BSI)",
+      desc: "Business Process Analysis at PT Bank Syariah Indonesia Tbk (BSI)",
       tag: "BPMN",
       link: "https://www.figma.com/design/cCyRLCUsLhTwiJGtkf7JeR/Q-Learn-Go-_DAQ2025?node-id=149-2043&t=EAHyUpY5g1sJZHqP-1",
       bg: "bg-purple-100",
@@ -172,7 +173,7 @@ React.createElement(
     item.desc
   ),
 
-  // 👉 TOMBOL LIHAT PROYEK
+  // TOMBOL LIHAT PROYEK
   item.link &&
     React.createElement(
       "a",
@@ -183,7 +184,7 @@ React.createElement(
         className:
           "inline-block text-sm font-semibold text-[#7755FF] hover:underline",
       },
-      "Lihat Proyek →"
+      "View Project→"
     )
 )
 

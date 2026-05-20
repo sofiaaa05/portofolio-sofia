@@ -42,7 +42,7 @@ const ProfileCard = () => {
           React.createElement(
             'p',
             { className: "text-gray-600 mb-8 leading-relaxed max-w-lg", key: "desc" },
-            "Berfokus pada perancangan pengalaman pengguna yang intuitif dengan pendekatan analisis kebutuhan dan proses bisnis sebagai dasar pengembangan solusi digital, serta pemahaman dasar pengembangan web untuk mendukung implementasi desain."
+            "Focused on designing intuitive user experiences through needs analysis and business process understanding as the foundation for developing digital solutions, with basic web development knowledge to support design implementation."
           ),
           React.createElement(
             'div',

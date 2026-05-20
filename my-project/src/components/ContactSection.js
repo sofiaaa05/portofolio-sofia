@@ -25,7 +25,7 @@ function ContactSection() {
       React.createElement(
         "p",
         { key: "desc", className: "text-gray-600 mb-16 max-w-2xl mx-auto text-center text-lg", style: { fontFamily: 'Poppins, sans-serif' } },
-        "Jika tertarik untuk berdiskusi atau berkolaborasi, jangan ragu untuk menghubungi saya melalui email maupun media sosial."
+        "Interested in working together or discussing opportunities? Feel free to connect with me through email or social media."
       ),
       React.createElement(
         "div",

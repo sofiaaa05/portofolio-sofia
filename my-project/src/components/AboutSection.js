@@ -31,7 +31,7 @@ function AboutSection() {
         React.createElement(
           "p",
           { className: "text-[#6B7280] text-base sm:text-lg md:text-lg leading-7 mb-6" },
-          "Saya Sofia Nugraheni, mahasiswa Sistem Informasi Universitas Negeri Surabaya. Penerima Beasiswa Pendidikan Indonesia (BPI) – Asrama Mahasiswa Nusantara (AMN) dari LPDP. Berfokus pada UI/UX Design dan perancangan pengalaman pengguna berbasis analisis kebutuhan serta proses bisnis, dengan pemahaman dasar pengembangan web. Berpengalaman dalam proyek kolaboratif, aktif berorganisasi dan mengikuti kompetisi."
+          "I am an active Information Systems student at State University of Surabaya and a scholarship awardee of Beasiswa Pendidikan Indonesia (BPI) - Asrama Mahasiswa Nusantara (AMN) from LPDP. Being actively involved in various collaborative projects, organizations, and competitions has helped me become accustomed to teamwork, good time management, and developing communication and problem-solving skills."
         ),
         React.createElement(
           "div",
