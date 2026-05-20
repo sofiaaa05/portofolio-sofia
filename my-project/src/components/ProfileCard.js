@@ -28,7 +28,7 @@ const ProfileCard = () => {
       // kiri
       React.createElement(
         'div',
-        { className: "w-full lg:w-1/2 max-w-2xl text-justify", key: "left" },
+        { className: "w-full lg:w-1/2 max-w-2xl text-left", key: "left" },
         [
           React.createElement('p', { className: "text-[#7755FF] mb-2 font-bold text-sm", key: "intro" }, "Hello, I'm Sofia Nugraheni"),
           React.createElement(
@@ -41,7 +41,7 @@ const ProfileCard = () => {
           ),
           React.createElement(
             'p',
-            { className: "text-gray-600 mb-8 leading-relaxed max-w-lg", key: "desc" },
+            { className: "text-gray-600 mb-8 leading-relaxed max-w-lg text-justify", key: "desc" },
             "Focused on designing intuitive user experiences through needs analysis and business process understanding as the foundation for developing digital solutions, with basic web development knowledge to support design implementation."
           ),
           React.createElement(

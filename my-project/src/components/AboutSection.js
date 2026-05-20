@@ -22,7 +22,7 @@ function AboutSection() {
 
       React.createElement(
         "div",
-        { className: "w-full md:w-1/2 max-w-md md:max-w-xl border border-[#E5E7EB] rounded-xl p-6 sm:p-8 bg-white shadow-sm text-center md:text-justify" },
+        { className: "w-full md:w-1/2 max-w-md md:max-w-xl border border-[#E5E7EB] rounded-xl p-6 sm:p-8 bg-white shadow-sm text-center md:text-left" },
         React.createElement(
           "h2",
           { className: "text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#1F1F1F] mb-4" },
@@ -30,7 +30,7 @@ function AboutSection() {
         ),
         React.createElement(
           "p",
-          { className: "text-[#6B7280] text-base sm:text-lg md:text-lg leading-7 mb-6" },
+          { className: "text-[#6B7280] text-base sm:text-lg md:text-lg leading-7 mb-6 text-justify" },
           "I am an active Information Systems student at State University of Surabaya and a scholarship awardee of Beasiswa Pendidikan Indonesia (BPI) - Asrama Mahasiswa Nusantara (AMN) from LPDP. Being actively involved in various collaborative projects, organizations, and competitions has helped me become accustomed to teamwork, good time management, and developing communication and problem-solving skills."
         ),
         React.createElement(
