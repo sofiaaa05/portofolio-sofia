@@ -9,6 +9,7 @@ const Navbar = () => {
     { name: "Skills", href: "#skills" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Contact", href: "#contact" },
+    { name: "Achievement", href: "#achievement" },
   ];
 
   return React.createElement(

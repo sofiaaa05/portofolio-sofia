@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import ProfileCard from "./components/ProfileCard";
 import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection"; 
+import SkillsSection from "./components/SkillsSection";
 import PortfolioSection from "./components/PortfolioSection";
+import AchievementSection from "./components/AchievementSection";
 
 import ContactSection from "./components/ContactSection";
-import FooterSection from "./components/Footer"; 
+import FooterSection from "./components/Footer";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
     React.createElement(AboutSection, null),
     React.createElement(SkillsSection, null),
     React.createElement(PortfolioSection, null),
+    React.createElement(AchievementSection, null),
     React.createElement(ContactSection, null),
     React.createElement(FooterSection, null) 
   );

@@ -4,7 +4,8 @@ import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
-import PortfolioSection from '../components/PortfolioSection';i
+import PortfolioSection from '../components/PortfolioSection';
+import AchievementSection from '../components/AchievementSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -16,6 +17,7 @@ function Home() {
       <AboutSection />
       <SkillsSection />
       <PortfolioSection />
+      <AchievementSection />
       <ContactSection />
       <Footer />
     </div>
