@@ -28,7 +28,7 @@ const ProfileCard = () => {
       // kiri
       React.createElement(
         'div',
-        { className: "w-full lg:w-1/2 max-w-2xl text-right", key: "left" },
+        { className: "w-full lg:w-1/2 max-w-2xl text-justify", key: "left" },
         [
           React.createElement('p', { className: "text-[#7755FF] mb-2 font-bold text-sm", key: "intro" }, "Hello, I'm Sofia Nugraheni"),
           React.createElement(

@@ -161,7 +161,7 @@ function PortfolioSection() {
        // Bagian teks
 React.createElement(
   "div",
-  { className: "p-5 text-right" },
+  { className: "p-5 text-justify" },
   React.createElement(
     "h3",
     { className: "text-lg font-bold text-[#1F1F1F] mb-1" },
